@@ -17,19 +17,19 @@ export default function CasesAndSolutions() {
         <h2>Web & Mobile</h2>
       </div>
 
-      <div className={styles.flex}>
-        <Card size="large" />
-        <Card size="large" />
-        <Card size="large" />
+      <div className={styles.grid3}>
+        <Card />
+        <Card />
+        <Card />
       </div>
 
       <div className={styles.title}>
         <h2>UI Design</h2>
       </div>
 
-      <div className={styles.flex}>
-        <Card type="design" size="small" />
-        <Card type="design" size="small" />
+      <div className={styles.grid2}>
+        <Card type="design" />
+        <Card type="design" />
       </div>
 
       <div className={styles.title}>

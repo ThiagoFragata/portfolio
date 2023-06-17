@@ -2,8 +2,6 @@
     background: var(--dark);
     padding: 1rem;
 
-    max-width: 448px;
-
     border-radius: 0.5rem;
 
     h3 {
@@ -36,5 +34,12 @@
         &:hover {
             background: var(--dark-light);
         }
+    }
+}
+
+@media (max-width: 425px) {
+    .card {
+        width: 100% !important;
+        min-width: 100% !important;
     }
 }

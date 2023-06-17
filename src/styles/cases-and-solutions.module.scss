@@ -44,14 +44,34 @@
     margin-top: 2rem;
 }
 
-.flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
 
-    padding: 1rem;
+@media (max-width: 768px) {
+    .grid3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+@media (max-width: 480px) {
+    .grid2 {
+        grid-template-columns: 1fr;
+    }
 }
 
 .projects {

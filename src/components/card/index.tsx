@@ -3,15 +3,11 @@ import styles from './card.module.scss'
 
 interface CardProps {
   type?: 'develop' | 'design'
-  size: 'large' | 'small'
 }
 
-export function Card({ type = 'develop', size }: CardProps) {
+export function Card({ type = 'develop' }: CardProps) {
   return (
-    <div
-      className={styles.card}
-      style={{ maxWidth: `${size === 'large' ? '448px' : '688px'}` }}
-    >
+    <div className={styles.card}>
       <h3>Title</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. A quod deserunt
