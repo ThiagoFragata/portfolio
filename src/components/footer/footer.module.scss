@@ -1,0 +1,15 @@
+.list {
+    list-style: none;
+    display: flex;
+    align-self: center;
+
+    gap: 3rem;
+    padding: 1rem;
+
+    color: var(--dark-light);
+
+    li:hover {
+        transition: all 0.2s ease-in-out;
+        color: var(--light);
+    }
+}

@@ -1,0 +1,62 @@
+.list {
+    list-style: none;
+    display: flex;
+    align-self: center;
+    white-space: nowrap; /* Impede quebras de linha */
+    overflow: hidden; /* Oculta conteúdo excedente */
+    align-items: center;
+
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.linkHover {
+    display: inline-block; /* Mantém o elemento em uma linha */
+    position: relative;
+    font-size: 1rem;
+}
+
+.linkHover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--light); /* Cor da linha */
+    transform: scaleX(0); /* A linha não será visível inicialmente */
+    transition: transform 0.3s ease-in-out;
+}
+
+.linkHover:hover::after,
+.linkHover.currentPage::after {
+    transform: scaleX(1); /* A linha será visível ao passar o mouse sobre o link */
+}
+
+.linkHover.currentPage::after {
+    background: var(--linear); /* Cor da linha */
+}
+
+.init {
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.blog {
+    background: var(--dark-light);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: var(--light);
+    font-size: 1rem;
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        filter: brightness(0.9);
+    }
+
+    &:disabled {
+        filter: brightness(0.8);
+        cursor: not-allowed;
+    }
+}
