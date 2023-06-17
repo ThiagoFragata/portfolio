@@ -1,0 +1,40 @@
+.card {
+    background: var(--dark);
+    padding: 1rem;
+
+    max-width: 448px;
+
+    border-radius: 0.5rem;
+
+    h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        background: transparent;
+        color: var(--title) !important;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: normal;
+        background: transparent;
+        color: var(--text);
+    }
+
+    a {
+        margin-top: 2rem;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        display: inline-flex;
+        gap: 0.5rem;
+        background: transparent;
+        align-items: center;
+
+        svg {
+            background: transparent;
+        }
+
+        &:hover {
+            background: var(--dark-light);
+        }
+    }
+}
