@@ -8,7 +8,7 @@ import { Footer } from '@/src/components/footer'
 const font = Raleway({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Sobre mim | Thiago Fragata',
+  title: 'Cases e Soluções | Thiago Fragata',
   description:
     'Portifolio do engenheiro de software e ui design Thiago Henrique Fragata',
 }
