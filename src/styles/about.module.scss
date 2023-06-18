@@ -47,17 +47,16 @@
 .flex {
     display: flex;
     gap: 2rem;
+    margin-top: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
     .flex {
         flex-direction: column;
     }
 }
 
 .image {
-    flex: 1;
-    width: 100%;
     background-size: contain;
     border-radius: 0.5rem;
 }
