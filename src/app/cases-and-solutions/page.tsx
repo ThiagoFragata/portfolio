@@ -1,8 +1,20 @@
 import { Card } from '@/src/components/card'
 import styles from '@/src/styles/cases-and-solutions.module.scss'
+import { Repos } from '@/src/types/repos'
 import { Link } from 'lucide-react'
 
-export default function CasesAndSolutions() {
+export default async function CasesAndSolutions() {
+  let repos = [] as Repos[]
+
+  try {
+    const response = await fetch(
+      'https://api.github.com/users/ThiagoFragata/repos',
+    )
+    repos = await response.json()
+  } catch (error) {
+    console.log(error)
+  }
+
   return (
     <main className={styles.container}>
       <div>
@@ -55,58 +67,20 @@ export default function CasesAndSolutions() {
       </div>
 
       <div className={styles.title}>
-        <h2>Todos meus projetos</h2>
+        <h2>Todos meus os projetos públicos</h2>
       </div>
 
       <div className={styles.projects}>
-        <h3>2023</h3>
         <ul className={styles.list}>
-          <li>
-            <a href="#">
-              <Link className={styles.icon} size={16} />
-              <strong>Projeto 1:</strong> Lorem ipsum dolor sit amet consectetur
-              adipisicing elit.
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <Link className={styles.icon} size={16} />
-              <strong>Projeto 1:</strong> Lorem ipsum dolor sit amet consectetur
-              adipisicing elit.
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <Link className={styles.icon} size={16} />
-              <strong>Projeto 1:</strong> Lorem ipsum dolor sit amet consectetur
-              adipisicing elit.
-            </a>
-          </li>
-        </ul>
-
-        <h3>2022</h3>
-        <ul className={styles.list}>
-          <li>
-            <a href="#">
-              <Link className={styles.icon} size={16} />
-              <strong>Projeto 1:</strong> Lorem ipsum dolor sit amet consectetur
-              adipisicing elit.
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <Link className={styles.icon} size={16} />
-              <strong>Projeto 1:</strong> Lorem ipsum dolor sit amet consectetur
-              adipisicing elit.
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <Link className={styles.icon} size={16} />
-              <strong>Projeto 1:</strong> Lorem ipsum dolor sit amet consectetur
-              adipisicing elit.
-            </a>
-          </li>
+          {repos.map((item: Repos) => (
+            // eslint-disable-next-line react/jsx-key
+            <li>
+              <a href={item.html_url} target="_blank" rel="noreferrer">
+                <Link className={styles.icon} size={16} />
+                <strong>{item.name} </strong> {item.description}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </main>
