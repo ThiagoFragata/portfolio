@@ -15,8 +15,7 @@ export default function CasesAndSolutions() {
         <Image
           className={styles.image}
           src={Desk}
-          width={600}
-          height={800}
+          height={400}
           alt="Picture of Desk development"
         />
 
