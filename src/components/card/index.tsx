@@ -3,27 +3,25 @@ import styles from './card.module.scss'
 
 interface CardProps {
   type?: 'develop' | 'design'
+  title: string
+  description: string
+  link: string
 }
 
-export function Card({ type = 'develop' }: CardProps) {
+export function Card({
+  type = 'develop',
+  title,
+  description,
+  link,
+}: CardProps) {
   return (
     <div className={styles.card}>
-      <h3>Title</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. A quod deserunt
-        blanditiis magni qui nostrum tempore, nulla laudantium natus cum
-        suscipit praesentium, eos est perspiciatis eaque enim sint minus
-        voluptatum!
-      </p>
-      {type === 'develop' ? (
-        <a href="#">
-          <Github /> Github
-        </a>
-      ) : (
-        <a href="#">
-          <Figma /> Figma
-        </a>
-      )}
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <a href={link} target="_blank" rel="noreferrer">
+        {type === 'develop' ? <Github /> : <Figma />}{' '}
+        {type === 'develop' ? 'Github' : 'Figma'}
+      </a>
     </div>
   )
 }
