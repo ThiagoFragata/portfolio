@@ -13,6 +13,11 @@ export function Footer() {
         </a>
       </li>
       <li>
+        <a target="_blank" href="figma.com/@thiagohenriquef" rel="noreferrer">
+          Figma
+        </a>
+      </li>
+      <li>
         <a
           target="_blank"
           href="https://www.instagram.com/_thiagofragata/"
