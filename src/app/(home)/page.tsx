@@ -1,8 +1,10 @@
-import { MessagesSquare } from 'lucide-react'
 import styles from '@/src/styles/home.module.scss'
+import { MessagesSquare } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Page() {
   const site = 'https://tucandev.com.br/'
+  const phoneNumber = '5592986080837' // Substitua pelo número desejado
 
   return (
     <main className={styles.container}>
@@ -15,10 +17,15 @@ export default function Page() {
             tucandev
           </a>
         </p>
-        <button className={styles.whatsapp}>
+
+        <Link
+          className={styles.whatsapp}
+          target="_blank"
+          href={`https://wa.me/${phoneNumber}?text=Olá,%20tenho%20interesse%20em%20fazer%20um%20projeto!`}
+        >
           <MessagesSquare color="#2c9f5a" className={styles.icon} />
           Vamos conversar?
-        </button>
+        </Link>
       </div>
     </main>
   )
