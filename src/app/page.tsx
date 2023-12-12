@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Page() {
   return (
-    <main className={styles.container}>
+    <div className={styles.container}>
       <div>
         <h2>👋 Olá, seja-vindo, esse é o meu portifolio!</h2>
         <h1>Thiago Henrique Fragata</h1>
@@ -19,6 +19,6 @@ export default function Page() {
           Vamos conversar?
         </Link>
       </div>
-    </main>
+    </div>
   )
 }

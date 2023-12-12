@@ -46,7 +46,7 @@ export default function CasesAndSolutions() {
       </div>
 
       <div className={styles.title}>
-        <h2>Experiência</h2>
+        <h2>Experiências</h2>
       </div>
 
       <div className={styles.projects}>

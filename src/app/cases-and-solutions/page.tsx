@@ -6,10 +6,10 @@ export default function CasesAndSolutions() {
   return (
     <main className={styles.container}>
       <div>
-        <h1>Trabalho & Hobbies</h1>
+        <h1>Trabalhos & Hobbies</h1>
 
         <p>
-          Essa página lista os principais projetos que venho desenvolvendo
+          Essa página mostra os principais projetos que venho desenvolvendo
           durante a minha jornada.
         </p>
 

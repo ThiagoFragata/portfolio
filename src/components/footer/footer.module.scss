@@ -1,16 +1,14 @@
-.list {
-    list-style: none;
+.container {
     display: flex;
-    align-self: center;
+    flex-direction: column;
+    align-items: center;
 
-    gap: 3rem;
-    padding: 1rem;
+    color: gray;
+    gap: .25rem;
+    padding: .5rem;
 
-    color: var(--dark-light);
-
-    li:hover {
-        transition: all 0.2s ease-in-out;
-        color: var(--light);
+    p, small {
+        font-size: small;
     }
 }
 

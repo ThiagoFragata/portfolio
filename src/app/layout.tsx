@@ -1,16 +1,16 @@
 import '@/src/styles/globals.scss'
 
-import { ReactNode } from 'react'
-import { Raleway } from 'next/font/google'
-import { Navbar } from '@/src/components/navbar'
 import { Footer } from '@/src/components/footer'
+import { Navbar } from '@/src/components/navbar'
+import { Raleway } from 'next/font/google'
+import { ReactNode } from 'react'
 
 const font = Raleway({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Portifolio | Thiago Fragata',
+  title: 'Portfolio | Thiago Fragata',
   description:
-    'Portifolio do engenheiro de software e ui design Thiago Henrique Fragata',
+    'Site portfolio de projetos últimos projetos e projetos em execução',
 }
 
 export default function LayoutHome({ children }: { children: ReactNode }) {
