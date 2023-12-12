@@ -1,8 +1,8 @@
 'use client'
-import Link from 'next/link'
-import styles from './navbar.module.scss'
-import { usePathname, useRouter } from 'next/navigation'
 import { ChevronLeft } from 'lucide-react'
+import Link from 'next/link'
+import { usePathname, useRouter } from 'next/navigation'
+import styles from './navbar.module.scss'
 
 export function Navbar() {
   const pathname = usePathname()
@@ -23,6 +23,7 @@ export function Navbar() {
         >
           <Link href="/">Inicio</Link>
         </li>
+
         <li
           className={`
         ${styles.linkHover} 
@@ -30,6 +31,7 @@ export function Navbar() {
         >
           <Link href="/cases-and-solutions">Cases e soluções</Link>
         </li>
+
         <li
           className={`
         ${styles.linkHover} 
@@ -37,10 +39,15 @@ export function Navbar() {
         >
           <Link href="about">Sobre</Link>
         </li>
+
         <li>
-          <button disabled className={styles.blog}>
-            Blog
-          </button>
+          <Link
+            href={`https://wa.me/5592993788359?text=Oi!`}
+            target="_blank"
+            className={styles.blog}
+          >
+            Contato
+          </Link>
         </li>
       </ul>
     </div>

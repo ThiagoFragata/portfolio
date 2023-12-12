@@ -1,5 +1,5 @@
 import styles from '@/src/styles/home.module.scss'
-import { MessagesSquare } from 'lucide-react'
+import { Send } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Page() {
@@ -15,7 +15,7 @@ export default function Page() {
           target="_blank"
           href={`https://wa.me/5592993788359?text=Oi!`}
         >
-          <MessagesSquare color="#2c9f5a" className={styles.icon} />
+          <Send color="#2c9f5a" className={styles.icon} />
           Vamos conversar?
         </Link>
       </div>
