@@ -2,11 +2,11 @@
     background: var(--dark);
     padding: 1rem;
 
-    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    a {
-        cursor: pointer;
-    }
+    border-radius: 0.5rem;
 
     h3 {
         font-size: 2rem;
@@ -16,6 +16,7 @@
     }
 
     p {
+        flex: 1;
         font-size: 1rem;
         font-weight: normal;
         background: transparent;
@@ -23,10 +24,12 @@
     }
 
     a {
+        cursor: pointer;
         margin-top: 2rem;
         padding: 0.5rem;
         border-radius: 0.25rem;
         display: inline-flex;
+        width: 6rem;
         gap: 0.5rem;
         background: transparent;
         align-items: center;

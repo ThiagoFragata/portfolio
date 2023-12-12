@@ -37,7 +37,15 @@
 
     p {
         margin-top: 1rem;
+        margin-bottom: .5rem;
     }
+
+    strong {
+        color: var(--danger);
+        font-size: .75rem;
+        font-weight: 300;
+    }
+
 }
 
 .title {
@@ -82,6 +90,22 @@
     h3 {
         font-size: 1.5rem;
         font-weight: bold;
+    }
+
+    a {
+        display: inline-flex;
+        padding: .5rem;
+        border-radius: .25rem;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            background: transparent;
+        }
+
+        &:hover {
+            background: var(--dark-light);
+        }
     }
 }
 
