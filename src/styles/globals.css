@@ -28,7 +28,7 @@ a {
   padding: 1rem;
   border-radius: 2rem;
   transition: all 0.2s ease-in-out;
-  display: flex;
+  display: inline-flex;
   gap: .5rem;
   align-items: center;
 

@@ -4,13 +4,13 @@ const portfolio = [
   {
     title: 'Smart Medical Cabinet',
     description: 'Aplicativos revolucionários para médicos e pacientes, impulsionados pela inteligência artificial, para garantir aderência medicamentosa. Deixe a IA cuidar das notificações enquanto você cuida da saúde!',
-    url: "url('/images/smart-medical-cabinet-app.png')",
+    url: "url('/images/smart-medical-cabinet.png')",
     tags: ["React Native", "Expo", "Firebase", "Figma"],
   },
   {
     title: 'e-Farma',
     description: 'Uma plataforma robusta para gerenciar vendas e estoque em farmácias. A solução completa para simplificar seu negócio e otimizar suas operações!',
-    url: "url('/images/e-farma.png')",
+    url: "url('/images/e-farmas.png')",
     tags: ["NextJS", "Firebase", "Figma"],
   },
   {
@@ -22,19 +22,19 @@ const portfolio = [
   {
     title: 'SysCOP',
     description: 'Um sistema confiável para o registro de ocorrências, projetado especialmente para os agentes de portaria da Universidade Federal do Amazonas. Mantenha sua comunidade segura com o SysCOP!',
-    url: "url('/images/sysCOP.png')",
+    url: "url('/images/sys-cop.png')",
     tags: ["NextJS", "NestJS", "Postgres", "Figma"],
   },
   {
     title: 'Parintins Show Dashboard',
     description: 'Controle completo de vendas e estoque para lojas de fogos de artifício. Transforme seu negócio em um espetáculo com o Sistema Parintins Show Fogos!',
-    url: "url('/images/pinfogos-sistema.png')",
+    url: "url('/images/pin-fogos.png')",
     tags: ["NextJS", "MongoDB", "Figma"],
   },
   {
     title: 'Império Verde Dashboard',
     description: 'Uma interface cativante desenvolvida para o controle do mercado de hortaliças. Domine o universo verde com o Império Verde!',
-    url: "url('/images/horti-fruit.png')",
+    url: "url('/images/imperio-verde.png')",
     tags: ["Figma"],
   },
   {
@@ -52,7 +52,7 @@ const portfolio = [
   {
     title: 'Warana Finances',
     description: 'Domine o mercado de guaraná com uma plataforma de última geração para monitoramento, controle e vendas. Warana Finances - porque cada gota conta!',
-    url: "url('/images/guarana-finances.png')",
+    url: "url('/images/warana-finances.png')",
     tags: ["React Native", "NestJS", "MySQL", "Figma"],
   },
 ]

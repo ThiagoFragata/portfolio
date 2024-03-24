@@ -12,7 +12,7 @@ export function Footer() {
       <p className="text-base font-light">Se você tem algum projeto em mente, sinta-se à vontade para me enviar uma mensagem.</p>
 
       <Link
-        className='mt-4 button-link'
+        className='mt-4 button-link hover:bg-neutral-800 hover:bg-opacity-20'
         href={`https://wa.me/5592993788359?text=Oi!`}
         target="_blank"
       >
