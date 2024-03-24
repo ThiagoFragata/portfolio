@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+
+  &:hover {
+    filter: brightness(0.75);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.button-link {
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+
+  &:hover {
+    filter: brightness(0.75);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}

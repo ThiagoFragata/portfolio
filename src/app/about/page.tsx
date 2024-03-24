@@ -1,92 +1,58 @@
-import styles from '@/src/styles/about.module.scss'
-import { Link } from 'lucide-react'
 import Image from 'next/image'
 
-import Profile from '@/src/assets/images/profile.png'
+import { ProfileImg } from '@/assets/images'
+import { Link as LinkIcon } from 'lucide-react'
+import Link from 'next/link'
 
-export default function CasesAndSolutions() {
+export default function About() {
   return (
-    <main className={styles.container}>
-      <div>
-        <h1>Um pouco sobre mim</h1>
+    <main className='max-w-screen-lg mx-auto mb-8'>
+      <div className='my-16 mt-4'>
+        <h1 className='text-3xl font-semibold'>Um pouco sobre mim</h1>
       </div>
 
-      <div className={styles.flex}>
+      <div className='flex items-start gap-8'>
         <Image
-          className={styles.image}
-          src={Profile}
-          height={400}
-          alt="Photo of profile"
+          src={ProfileImg}
+          width={400}
+          alt="Foto de perfil"
+          className='box-border border rounded-md'
         />
 
-        <div className={styles.bio}>
-          <p>
-            Meu nome é Thiago Henrique, mais conhecido como{' '}
-            <strong>Fragata</strong>, tenho 24 anos.
-          </p>
-          <p>
-            Sou <strong>Engenheiro de Software</strong>, atuo como desenvolvedor{' '}
-            <strong>Fullstack</strong> especializado na criação de interfaces
-            modernas e responsivas, com ênfase em performance e otimização.
-            Minha experiência abrange todo ciclo de desenvolvimento web e
-            mobile, proporcionando soluções rápidas e eficazes. Apaixonado por
-            superar desafios, estou constantemente em busca de oportunidades
-            para aplicar minha criatividade e habilidades, buscando sempre novas
-            experiências.
-          </p>
+        <div>
+          <div>
+            <h2 className='mb-8 text-xl font-semibold'>Bio</h2>
+          </div>          <div>
+            <p className='mb-4'>
+              Meu nome é Thiago Henrique, mais conhecido como <strong>Fragata ✌️</strong> e tenho 24 anos.
+            </p>
 
-          <h4>Bio</h4>
+            <p className='mb-8'>
+              Sou <strong>Engenheiro de Software</strong>, atuo como desenvolvedor fullstack web/mobile e UI Designer. Minhas stacks favoritas são <strong>NextsJS, ReactNative e NestJS</strong>. Meu foco é no desenvolvimento frontend, atualmente atuo em freelas onde executo o desenvolvimento do frontend e backend das aplicações. Possuo grande conhecimento em desenvolvimento web, entregando soluções ágeis com resultados assertivos nos projetos.
+            </p>
+          </div>
 
-          <p>
-            | Me chamo Thiago, mas pode me chamar de <strong>Fragata</strong> ✌️
-          </p>
+          <div>
+            <h2 className='mb-8 text-xl font-semibold'>Experiências</h2>
+          </div>
 
-          <p></p>
+          <ul className='flex flex-col gap-4'>
+            <Link href='https://super.ufam.edu.br/sobre/' target='_blank' className='flex items-center gap-2'>
+              <LinkIcon size={16} /> <strong>SUPER</strong> • Itacoatiara, AM • 12
+              meses
+            </Link>
+            <Link href='https://clicksoft.com.br/' target='_blank' className='flex items-center gap-2'>
+              <LinkIcon size={16} /> <strong>ClickSoft</strong> Rio de Janeiro, RJ • 10 meses
+            </Link>
+            <li className='flex items-center gap-2'>
+              <strong>Onvider</strong> Andradina, MS • 2 anos
+            </li>
+            <li className='flex items-center gap-2'>
+              <strong>Smart GAIT</strong> • Manaus, AM • 8
+              meses
+            </li>
+          </ul>
         </div>
-      </div>
-
-      <div className={styles.title}>
-        <h2>Experiências</h2>
-      </div>
-
-      <div className={styles.projects}>
-        <ul className={styles.list}>
-          <li>
-            <a href="#">
-              <Link className={styles.icon} size={16} />
-              <strong>SUPER</strong> • Itacoatiara, AM - abr 2023 - momento • 3
-              meses
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <Link className={styles.icon} size={16} />
-              <strong>Clicksoft</strong> Rio de Janeiro, RJ - out 2022 - set
-              2023 • 10 meses
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <Link className={styles.icon} size={16} />
-              <strong>Onvider</strong> Andradina, MS - nov 2021 - out 2022 • 1 e
-              8 meses
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <Link className={styles.icon} size={16} />
-              <strong>Smart gait</strong> • Manaus, AM - nov 2021 - mar 2022 • 8
-              meses
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <Link className={styles.icon} size={16} />
-              <strong>TucanDev</strong> • Itacoatiara, AM - fev 2021 - out 2023
-              • +2 anos
-            </a>
-          </li>
-        </ul>
       </div>
     </main>
   )

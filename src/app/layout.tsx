@@ -1,11 +1,15 @@
-import '@/src/styles/globals.scss'
+import '@/styles/globals.css'
 
-import { Footer } from '@/src/components/footer'
-import { Navbar } from '@/src/components/navbar'
-import { Raleway } from 'next/font/google'
 import { ReactNode } from 'react'
 
-const font = Raleway({ subsets: ['latin'] })
+import Providers from '@/app/providers'
+
+import { Footer } from '@/components/footer'
+import { Navbar } from '@/components/navbar'
+
+import { Inter } from 'next/font/google'
+
+const font = Inter({ subsets: ['latin'], style: 'normal', variable: '--sans-serif' })
 
 export const metadata = {
   title: 'Portfolio | Thiago Fragata',
@@ -15,13 +19,13 @@ export const metadata = {
 
 export default function LayoutHome({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body className={font.className}>
-        <div className="container">
+    <html lang="pt-BR">
+      <body className={`${font.className} min-h-screen flex flex-col justify-between`}>
+        <Providers>
           <Navbar />
           {children}
           <Footer />
-        </div>
+        </Providers>
       </body>
     </html>
   )
