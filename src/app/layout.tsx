@@ -1,7 +1,5 @@
 import '@/styles/globals.css'
 
-import { ReactNode } from 'react'
-
 import Providers from '@/app/providers'
 
 import { Footer } from '@/components/footer'
@@ -17,9 +15,9 @@ export const metadata = {
     'Site portfolio de projetos últimos projetos e projetos em execução',
 }
 
-export default function LayoutHome({ children }: { children: ReactNode }) {
+export default function LayoutHome({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" suppressHydrationWarning>
       <body className={`${font.className} min-h-screen flex flex-col justify-between`}>
         <Providers>
           <Navbar />
