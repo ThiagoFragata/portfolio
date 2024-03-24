@@ -11,7 +11,7 @@ export function Navbar() {
   const { back } = useRouter()
 
   return (
-    <div className='flex items-center justify-between px-16 py-4'>
+    <div className='flex items-center justify-between w-full max-w-screen-xl px-8 py-4 mx-auto'>
       <div className='flex items-center gap-8'>
         {pathname !== '/' &&
           <button disabled={pathname === '/'} onClick={() => back()} className='flex items-center justify-center gap-2 border'>
@@ -24,9 +24,9 @@ export function Navbar() {
             <Link href="/">Inicio</Link>
           </li>
 
-          {/* <li>
-            <Link  href="/cases-and-solutions">Cases e soluções</Link>
-          </li> */}
+          <li>
+            <Link href="/cases-and-solutions">Cases e soluções</Link>
+          </li>
 
           <li>
             <Link href="about">Sobre</Link>
@@ -35,7 +35,6 @@ export function Navbar() {
       </div>
 
       <ToggleButtonTheme />
-
     </div>
   )
 }

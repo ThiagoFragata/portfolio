@@ -7,7 +7,7 @@ export function Footer() {
 
 
   return (
-    <div className="w-full max-w-screen-lg px-8 py-4 mx-auto mb-8 border rounded-lg">
+    <div className="w-full max-w-screen-xl px-8 py-4 mx-auto mb-8 border rounded-lg">
       <h1 className="text-lg font-medium">Vamos construir algo juntos?</h1>
       <p className="text-base font-light">Se você tem algum projeto em mente, sinta-se à vontade para me enviar uma mensagem.</p>
 

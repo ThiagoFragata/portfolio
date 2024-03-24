@@ -6,9 +6,9 @@ import Link from 'next/link'
 
 export default function About() {
   return (
-    <main className='max-w-screen-lg mx-auto mb-8'>
+    <main className='max-w-screen-xl mx-auto mb-8'>
       <div className='my-16 mt-4'>
-        <h1 className='text-3xl font-semibold'>Um pouco sobre mim</h1>
+        <h1 className="font-bold text-7xl">Um pouco sobre mim</h1>
       </div>
 
       <div className='flex items-start gap-8'>
@@ -28,7 +28,7 @@ export default function About() {
             </p>
 
             <p className='mb-8'>
-              Sou <strong>Engenheiro de Software</strong>, atuo como desenvolvedor fullstack web/mobile e UI Designer. Minhas stacks favoritas são <strong>NextsJS, ReactNative e NestJS</strong>. Meu foco é no desenvolvimento frontend, atualmente atuo em freelas onde executo o desenvolvimento do frontend e backend das aplicações. Possuo grande conhecimento em desenvolvimento web, entregando soluções ágeis com resultados assertivos nos projetos.
+              Sou <strong>Engenheiro de Software</strong>, atuo como desenvolvedor fullstack web/mobile e UI Designer. Minhas stacks favoritas são <strong>NextsJS, React Native e NestJS</strong>. Meu foco é no desenvolvimento frontend, atualmente atuo em freelas onde executo o desenvolvimento do frontend e backend das aplicações. Possuo grande conhecimento em desenvolvimento web, entregando soluções ágeis com resultados assertivos nos projetos.
             </p>
           </div>
 
